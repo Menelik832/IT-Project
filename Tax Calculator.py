@@ -1,21 +1,21 @@
-def tax_determiner(income):
-    if income <= 2000:
+def compute_tax(salary):
+    if salary <= 2000:
         tax_rate = 0
-    elif income > 2000 and income <= 4000:
+    elif salary > 2000 and salary <= 4000:
         tax_rate = 0.15
-    elif income > 4000 and income <= 7000:
+    elif salary > 4000 and salary <= 7000:
         tax_rate = 0.20
-    elif income > 7000 and income <= 10000:
+    elif salary > 7000 and salary <= 10000:
         tax_rate = 0.25
-    elif income > 10000 and income <= 14000:
+    elif salary > 10000 and salary <= 14000:
         tax_rate = 0.30 
     else:   
         tax_rate = 0.35
-    tax = income * tax_rate
+    tax = salary * tax_rate
     return tax       
-income = float(input("Enter your income: "))
-tax = tax_determiner(income)
-if income < 0:
-    print("Income cannot be negative")
+salary = float(input("Enter your salary: "))
+tax = compute_tax(salary)
+if salary < 0:
+    print("salary cannot be negative")
 else:
-    print(f"The tax on an income of {income} is {tax}")
+    print(f"The tax on an salary of {salary} is {tax}")
