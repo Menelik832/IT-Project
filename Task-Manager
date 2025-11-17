@@ -1,1 +1,30 @@
-
+todo = []
+print ("Welcome to the
+To-Do List App!")
+x = int(input("press 1 to remove, 2 to add and 3
+clear: "))
+4
+5
+while True: if x == 1:
+item = input("Enter the item to
+remove: ")
+if
+item in todo:
+todo. remove (item)
+print(f'Item
+"Kitem}" removed from the to-do list.')
+else:
+print(f'Item "{item}" not found in the to-do list.')
+print (todo)
+if x = 2:
+item = input("Enter the
+item to
+add: ")
+todo. append (item)
+print(f'Item "{item}"
+added to the to-do list.')
+print (todo)
+if x == 3:
+todo. clear ( )
+2
+print("All items cleared from the to-do list.")
