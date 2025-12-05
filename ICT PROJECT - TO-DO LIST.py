@@ -40,7 +40,7 @@ def edit():
 
 def mark_done():
     if not to_do:
-        print("No tasks available")
+        print("No tasks accessilbe")
         return
     show_list()
     done = input("Which task has been complete? ").strip()
@@ -53,7 +53,7 @@ def mark_done():
 
 def show_list():
     if not to_do:
-        print("No tasks available")
+        print("No tasks accessible")
     else:
         print("Your task list:")
         for i, task in enumerate(to_do, 1):
@@ -76,14 +76,14 @@ def clear_all():
 
 def main_menu():
     print("How Can I Help You Today?")
-    print("1. Add task")
-    print("2. Remove task")
-    print("3. Edit task")
-    print("4. Mark task completed")
-    print("5. Show all tasks")
-    print("6. Show all completed tasks")
+    print("1. Add new tasks")
+    print("2. Remove tasks")
+    print("3. Edit existing tasks")
+    print("4. Mark tasks as completed")
+    print("5. Display all tasks")
+    print("6. Display all completed tasks")
     print("7. Remove all tasks")
-    print("8. Exit")
+    print("8. Exit the application")
 
 def main():
     while True:
