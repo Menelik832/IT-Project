@@ -2,7 +2,7 @@ to_do = []
 completed = []
 
 def add():
-    new = input("Add new task: ").strip()
+    new = input("Add task: ").strip()
     if new:
         to_do.append(new)
         print(f'Added: "{new}"')
@@ -76,10 +76,10 @@ def clear_all():
 
 def main_menu():
     print("How Can I Help You Today?")
-    print("1. Add a new task")
-    print("2. Remove a task")
-    print("3. Edit a task")
-    print("4. Mark a task completed")
+    print("1. Add task")
+    print("2. Remove task")
+    print("3. Edit task")
+    print("4. Mark task completed")
     print("5. Show all tasks")
     print("6. Show all completed tasks")
     print("7. Remove all tasks")
@@ -111,9 +111,3 @@ def main():
             print("Invaled input. Pick 1-8")
 main()
     
-    
-
-
-
-    
-
